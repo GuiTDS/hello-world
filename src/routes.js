@@ -3,7 +3,6 @@ import Inicio from "./paginas/Inicio";
 import SobreMim from "./paginas/SobreMim";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-const pagina = window.location.pathname === '/' ? <Inicio/> : <SobreMim />
 
 function AppRoutes() {
   return (

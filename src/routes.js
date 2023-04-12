@@ -5,6 +5,7 @@ import SobreMim from "./paginas/SobreMim";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PaginaPadrao from "componentes/PaginaPadrao";
 import Post from "paginas/Post";
+import NaoEncontrada from "paginas/NaoEncontrada";
 
 
 function AppRoutes() {
@@ -18,7 +19,7 @@ function AppRoutes() {
           <Route path="posts/:id" element={<Post />} />
         </Route>
 
-        <Route path="*" element={<div>Página não encontrada</div>} />
+        <Route path="*" element={<NaoEncontrada />} />
 
       </Routes>
       <Rodape />
